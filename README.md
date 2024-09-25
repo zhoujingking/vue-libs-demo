@@ -1,1 +1,1 @@
-# vue-libs-demo
+# vue-libs-demo: mono repo
