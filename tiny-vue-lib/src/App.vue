@@ -38,8 +38,19 @@
         <h1>Scroll Text</h1>
         <ScrollText />
       </div>
+      <div id="fullscreen">
+        <h1>Full Screen</h1>
+        <FullScreen />
+      </div>
+      <div id="crop">
+        <h1>Image Crop</h1>
+        <Crop />
+      </div>
+      <div id="highlight">
+        <h1>Highlight</h1>
+        <Highlight />
+      </div>
     </div>
-    <div style="height: 100vh;"></div>
   </div>
 </template>
 
@@ -52,6 +63,9 @@ import QrCode from './QrCode.vue'
 import Wizard from './Wizard.vue'
 import FlowChart from './FlowChart.vue'
 import ScrollText from './ScrollText.vue'
+import FullScreen from './FullScreen.vue'
+import Crop from './Crop.vue'
+import Highlight from './Highlight.vue'
 
 const links = ref([
   {
@@ -101,11 +115,27 @@ const links = ref([
         link: '#flowchart',
         title: 'Flowchart',
       },
+      {
+        key: 'scrolltext',
+        link: '#scrolltext',
+        title: 'Scroll Text',
+      },
+      {
+        key: 'fullscreen',
+        link: '#fullscreen',
+        title: 'Full Screen',
+      },
+      {
+        key: 'crop',
+        link: '#crop',
+        title: 'Image Crop',
+      },
+      {
+        key: 'highlight',
+        link: '#highlight',
+        title: 'Highlight',
+      },
     ]
   },
 ])
-
-const onLinkClick = event => {
-  event.preventDefault();
-}
 </script>
